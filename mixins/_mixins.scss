@@ -39,7 +39,6 @@ $base-size: $base__font-size;
   width: 100%;
 }
 
-
 // Appearance
 //--------------
 @mixin image-mask-gradient() {
@@ -52,7 +51,7 @@ $base-size: $base__font-size;
 }
 
 // Clearfix (from Bootstrap v3.3.7)
-//
+//--------------
 // For modern browsers
 // 1. The space content is one way to avoid an Opera bug when the
 //    contenteditable attribute is included anywhere else in the document.

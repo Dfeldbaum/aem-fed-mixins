@@ -17,7 +17,6 @@
   }
 }
 
-
 // Mobile Portrait: 0px to 479px
 //--------------
 @mixin media-mobile-portrait {
@@ -28,7 +27,6 @@
 
   }
 }
-
 
 // Mobile Landscape: 480px to 767px
 //--------------
@@ -75,7 +73,6 @@
   }
 }
 
-
 // Mobile and Tablet: 0 to 991px
 //--------------
 @mixin media-mobile-and-tablet {
@@ -114,7 +111,6 @@
   }
 }
 
-
 // Tablet: Orientation Portrait (768px to 991px)
 //--------------
 @mixin media-tablet-portrait {
@@ -132,7 +128,6 @@
 //-----------------------------------
 // Media Queries: Desktop
 //-----------------------------------
-
 
 // Desktop Small and Desktop Large: > 992px
 //--------------
