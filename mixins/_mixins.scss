@@ -2,6 +2,8 @@
 // Sass Generic Mixins
 //-----------------------------------
 
+@import "../variables/variables-base/";
+
 // Typography - Px to Rem
 //--------------
 $base-size: $base__font-size;

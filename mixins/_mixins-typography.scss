@@ -2,6 +2,8 @@
 // Sass Typography Mixins
 //-----------------------------------
 
+@import "../variables/variables-base/";
+
 /** Base font-stack
 * $customFonts are optional authored CSS variable font stacks
 * @if statement is used because  when $customFonts is undefined, `var($customFonts)` results in `var(),...`,
