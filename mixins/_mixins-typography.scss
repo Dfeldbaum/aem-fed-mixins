@@ -11,12 +11,13 @@ $base-size: $base__font-size;
   @return #{$rem-size}rem;
 }
 
+
 //-----------------------------------
 // NOTE: There are 3 Mixins for each heading tag since there are some use cases
 // where a Heading should look like an H4 in mobile but like an H5 in desktop breakpoints.
 //-----------------------------------
 
-// H1 Heading
+// H1 Heading - Hero Section
 //--------------
 @mixin h1-hero--mobile {
   font-size: rem($base__font-size * 4);
@@ -35,6 +36,7 @@ $base-size: $base__font-size;
     @include h1-hero--desktop;
   }
 }
+
 
 // H1 Heading
 //--------------
@@ -101,6 +103,7 @@ $base-size: $base__font-size;
   }
 }
 
+
 // H4 Heading
 //--------------
 @mixin h4--mobile {
@@ -143,56 +146,23 @@ $base-size: $base__font-size;
 }
 
 
-// Body Copy - Hero Description
-//--------------
-@mixin hero-description--mobile {
-  font-size: rem($base__font-size * 1.2);
-  line-height: $base__line-height * 1.12;
-}
-
-
-@mixin hero-description--desktop {
-  font-size: rem($base__font-size * 1.6);
-  line-height: $base__line-height * 1.142;
-}
-
-
-@mixin hero-description {
-  @include font-family__secondary(--secondary-font);
-
-  @include hero-description--mobile;
-
-  @include media-desktop-and-up {
-    @include hero-description--desktop;
-  }
-}
-
-
 // Body Copy
 //--------------
 @mixin body-copy--mobile {
-  font-size: rem($base__font-size * 1.2);
+  font-size: rem($base__font-size * 1.6);
   font-weight: normal;
-  line-height: $base__line-height * 1.1111111111;
+  line-height: $base__line-height * .715;
 }
 
 
 @mixin body-copy--desktop {
   font-size: rem($base__font-size * 1.6);
   font-weight: normal;
-  line-height: $base__line-height * 1.130952381;
+  line-height: $base__line-height * .8929;
 }
 
-
-
 @mixin body-copy {
-  @include font-family__secondary(--secondary-font);
-
   @include body-copy--mobile;
-
-  a {
-    color: var(--link-brand-color, $color__primary-blue);
-  }
 
   @include media-desktop-and-up {
     @include body-copy--desktop;
@@ -203,25 +173,20 @@ $base-size: $base__font-size;
 // Body Copy Small
 //--------------
 @mixin body-copy-small--mobile {
-  font-size: rem($base__font-size * 1.2);
+  font-size: rem($base__font-size * 1.4);
   font-weight: normal;
-  line-height: $base__line-height * .9340659341;
+  line-height: $base__line-height * .715;
 }
 
 @mixin body-copy-small--desktop {
-  font-size: rem($base__font-size * 1.2);
+  font-size: rem($base__font-size * 1.4);
   font-weight: normal;
-  line-height: $base__line-height * .9523809524;
+  line-height: $base__line-height * .8929;
 }
 
 @mixin body-copy-small {
-  @include font-family__secondary(--secondary-font);
 
   @include body-copy-small--mobile;
-
-  a {
-    color: var(--link-brand-color, $color__primary-blue);
-  }
 
   @include media-desktop-and-up {
     @include body-copy-small--desktop;
@@ -234,19 +199,17 @@ $base-size: $base__font-size;
 //--------------
 @mixin eyebrow-large--mobile {
   font-size: rem($base__font-size * 1.8);
-  line-height: $base__line-height * .8403361345;
+  line-height: $base__line-height * .8929;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-large--desktop {
-  font-size: rem($base__font-size * 2.4);
-  line-height: $base__line-height * 1.130952381;
+  font-size: rem($base__font-size * 2.5);
+  line-height: $base__line-height * 1;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-large {
-  @include font-family__secondary(--secondary-font);
-
   font-weight: bold;
 
   @include eyebrow-large--mobile;
@@ -257,31 +220,28 @@ $base-size: $base__font-size;
 }
 
 
-// Eyebrow Smal
+// Eyebrow Small
 //--------------
 @mixin eyebrow-small--mobile {
-  font-size: rem($base__font-size * 1.8);
-  line-height: $base__line-height * .8673469388;
-  margin-bottom: $spacing__sm * .66;
+  font-size: rem($base__font-size * 1.6);
+  line-height: $base__line-height * .8929;
+  margin-bottom: $spacing__sm * .667;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-small--desktop {
-  font-size: rem($base__font-size * 1.8);
-  line-height: $base__line-height * .9523809524;
+  font-size: rem($base__font-size * 2);
+  line-height: $base__line-height * 1;
   text-transform: uppercase;
-  margin-bottom: $spacing__sm * .66;
+  margin-bottom: $spacing__sm * .667;
 }
 
 @mixin eyebrow-small {
-  @include font-family__secondary(--secondary-font);
-
   font-weight: bold;
 
   @include eyebrow-small--mobile;
 
   @include media-desktop-and-up {
-    @include font-family__secondary(--secondary-font);
     @include eyebrow-small--desktop;
   }
 }
