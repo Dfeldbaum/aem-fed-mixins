@@ -19,18 +19,16 @@ $base-size: $base__font-size;
 // H1 Heading
 //--------------
 @mixin h1-hero--mobile {
-  font-size: rem($base__font-size * 4.1);
-  line-height: $base__line-height * .8163;
+  font-size: rem($base__font-size * 4);
+  line-height: $base__line-height * .82143;
 }
 
 @mixin h1-hero--desktop {
-  font-size: rem($base__font-size * 5.4);
-  line-height: $base__line-height * .906;
+  font-size: rem($base__font-size * 5.5);
+  line-height: $base__line-height * .8929;
 }
 
 @mixin h1-hero {
-  @include font-family__primary-medium(--header-font-medium);
-
   @include h1-hero--mobile;
 
   @include media-desktop-and-up {
@@ -41,20 +39,18 @@ $base-size: $base__font-size;
 // H1 Heading
 //--------------
 @mixin h1--mobile {
-  font-size: rem($base__font-size * 2.7);
+  font-size: rem($base__font-size * 2.5);
   font-weight: normal;
-  line-height: $base__line-height * .8225108225;
+  line-height: $base__line-height * .82143;
 }
 
 @mixin h1--desktop {
-  font-size: rem($base__font-size * 3.6);
+  font-size: rem($base__font-size * 3.5);
   font-weight: normal;
-  line-height: $base__line-height * .8514;
+  line-height: $base__line-height * .8929;
 }
 
 @mixin h1 {
-  @include font-family__primary-medium(--header-font-medium);
-
   @include h1--mobile;
 
   @include media-desktop-and-up {
@@ -67,18 +63,16 @@ $base-size: $base__font-size;
 // H2 Heading
 //--------------
 @mixin h2--mobile {
-  font-size: rem($base__font-size * 2.7);
-  line-height: $base__line-height * .8163265306;
+  font-size: rem($base__font-size * 2);
+  line-height: $base__line-height * .82143;
 }
 
 @mixin h2--desktop {
-  font-size: rem($base__font-size * 3.6);
-  line-height: $base__line-height * .8928571429;
+  font-size: rem($base__font-size * 3);
+  line-height: $base__line-height * .8929;
 }
 
 @mixin h2 {
-  @include font-family__primary-medium(--header-font-medium);
-
   @include h2--mobile;
 
   @include media-desktop-and-up {
@@ -91,17 +85,15 @@ $base-size: $base__font-size;
 //--------------
 @mixin h3--mobile {
   font-size: rem($base__font-size * 1.8);
-  line-height: $base__line-height * .8163265306;
+  line-height: $base__line-height * .82143;
 }
 
 @mixin h3--desktop {
-  font-size: rem($base__font-size * 2.4);
-  line-height: $base__line-height * .8928571429;
+  font-size: rem($base__font-size * 2.5);
+  line-height: $base__line-height * .8929;
 }
 
 @mixin h3 {
-  @include font-family__primary-medium(--header-font-medium);
-
   @include h3--mobile;
 
   @include media-desktop-and-up {
@@ -109,25 +101,19 @@ $base-size: $base__font-size;
   }
 }
 
-
-
 // H4 Heading
 //--------------
 @mixin h4--mobile {
-  font-size: rem($base__font-size * 2);
-  font-weight: bold;
-  line-height: $base__line-height * .9415584416;
+  font-size: rem($base__font-size * 1.6);
+  line-height: $base__line-height * .82143;
 }
 
 @mixin h4--desktop {
-  font-size: rem($base__font-size * 3);
-  font-weight: bold;
-  line-height: $base__line-height;
+  font-size: rem($base__font-size * 2);
+  line-height: $base__line-height * .8929;
 }
 
 @mixin h4 {
-  @include font-family__secondary(--secondary-font);
-
   @include h4--mobile;
 
   @include media-desktop-and-up {
@@ -139,43 +125,20 @@ $base-size: $base__font-size;
 // H5 Heading
 //--------------
 @mixin h5--mobile {
-  font-size: rem($base__font-size * 1.8);
-  font-weight: bold;
-  line-height: $base__line-height * 1.0714285714;
+  font-size: rem($base__font-size * 1.6);
+  line-height: $base__line-height * .82143;
 }
 
 @mixin h5--desktop {
   font-size: rem($base__font-size * 1.8);
-  font-weight: bold;
-  line-height: $base__line-height * 1.0989010989;
+  line-height: $base__line-height * .8929;
 }
 
 @mixin h5 {
-  @include font-family__secondary(--secondary-font);
-
   @include h5--mobile;
 
   @include media-desktop-and-up {
     @include h5--desktop;
-  }
-}
-
-// links bold
-@mixin h5-link-bold {
-  @include h5;
-  @include font-family__primary-bold(--header-font-bold);
-
-  @include media-desktop-and-up {
-    @include font-family__primary-bold(--header-font-bold);
-  }
-}
-
-@mixin h4-link-bold {
-  @include h4;
-  @include font-family__primary-bold(--header-font-bold);
-
-  @include media-desktop-and-up {
-    @include font-family__primary-bold(--header-font-bold);
   }
 }
 
