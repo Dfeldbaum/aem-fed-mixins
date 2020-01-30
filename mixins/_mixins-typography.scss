@@ -2,167 +2,13 @@
 // Sass Typography Mixins
 //-----------------------------------
 
-/** Base font-stack
-* $customFonts are optional authored CSS variable font stacks
-* @if statement is used because  when $customFonts is undefined, `var($customFonts)` results in `var(),...`,
-* which throws off the font stack and will prevent the fallbacks from being applied.
-* When a CSS variable is passed in, Sass is unable to determine if it has a value or not, only if it exists.
-* For that reason, we define fallbacks in the var().
-* FONT is a placeholder for your chosed font-family
-*/
+// Typography - Px to Rem
 //--------------
+$base-size: $base__font-size;
 
-@mixin font-family__primary ($customFonts: null) {
-  @if $customFonts {
-    font-family: var($customFonts, 'FONT', Arial, sans-serif);
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: var($customFonts, 'FONT', Arial, HeisASC, sans-serif);
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: var($customFonts, 'FONT', Arial, HeitASC, sans-serif);
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-    }
-  } @else {
-    font-family: $font-family__primary;
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: 'FONT', Arial, HeisASC, sans-serif;
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: 'FONT', Arial, HeitASC, sans-serif;
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-    }
-  }
-}
-
-@mixin font-family__primary-bold ($customFonts: null) {
-  @if $customFonts {
-    font-family: var($customFonts, 'FONTBold', Arial, sans-serif);
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: var($customFonts, 'FONTBold', Arial, HeisASC, sans-serif);
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: var($customFonts, 'FONTBold', Arial, HeitASC, sans-serif);
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
-  } @else {
-    font-family: $font-family__primary-bold;
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: 'FONTBold', Arial, HeisASC, sans-serif;
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: 'FONTBold', Arial, HeitASC, sans-serif;
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
-  }
-}
-
-@mixin font-family__primary-medium ($customFonts: null) {
-  @if $customFonts {
-    font-family: var($customFonts, 'FONTMedium', Arial, sans-serif);
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: var($customFonts, 'FONTMedium', Arial, HeisASC, sans-serif);
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: var($customFonts, 'FONTMedium', Arial, HeitASC, sans-serif);
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-    }
-  } @else {
-    font-family: $font-family__primary-medium;
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: 'FONTMedium', Arial, HeisASC, sans-serif;
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: 'FONTMedium', Arial, HeitASC, sans-serif;
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-    }
-  }
-}
-
-@mixin font-family__secondary ($customFonts: null) {
-  @if $customFonts {
-    font-family: var($customFonts, Arial, sans-serif);
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: var($customFonts, Arial, HeisASC, sans-serif);
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: var($customFonts, Arial, HeitASC, sans-serif);
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-    }
-  } @else {
-    font-family: $font-family__secondary;
-
-    :lang(zh-cn) &,
-    :lang(zh-sg) & {
-      font-family: Arial, HeisASC, sans-serif;
-    }
-
-    :lang(zh-tw) &,
-    :lang(zh-hk) & {
-      font-family: Arial, HeitASC, sans-serif;
-    }
-
-    :lang(pl-pl) &,
-    :lang(cs-cz) & {
-      font-family: Arial, sans-serif;
-    }
-  }
+@function rem($size) {
+  $rem-size: $size / $base-size;
+  @return #{$rem-size}rem;
 }
 
 //-----------------------------------
@@ -191,7 +37,6 @@
     @include h1-hero--desktop;
   }
 }
-
 
 // H1 Heading
 //--------------

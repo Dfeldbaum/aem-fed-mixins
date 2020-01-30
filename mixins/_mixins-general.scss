@@ -2,15 +2,6 @@
 // Sass General Mixins
 //-----------------------------------
 
-// Typography - Px to Rem
-//--------------
-$base-size: $base__font-size;
-
-@function rem($size) {
-  $rem-size: $size / $base-size;
-  @return #{$rem-size}rem;
-}
-
 // Size
 //--------------
 @mixin size($width, $height) {
