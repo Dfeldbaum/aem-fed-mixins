@@ -88,13 +88,13 @@ Use @include image-mask-gradient to generate semi-transparent gradient styles fo
 
 ## Typography Mixins
 
-### Pixels to REM Converter
+### Pixels to REM Conversion
 
 Convert to rem units for any css property by inserting a pixel value as a number into a rem expression: 
 
 ```
 .demo-text {
-	font-size: rem(20); // 2rem
+  font-size: rem(20); // 2rem
 }
 ```
 
@@ -105,9 +105,9 @@ Use @include h1 for preset desktop and mobile font-size, font-weight and line-he
 ```
 .demo-h1-heading {
   @include h1; 
-	// desktop font-size: 35px; mobile font-size: 25px
-	// desktop line-height: 1.15; mobile line-height: 1.25 
-	// desktop & mobile font-weight: normal
+  // desktop font-size: 35px; mobile font-size: 25px
+  // desktop line-height: 1.15; mobile line-height: 1.25 
+  // desktop & mobile font-weight: normal
 
 }
 ```
@@ -119,8 +119,8 @@ Use @include h1-hero for preset desktop and mobile font-size and line-height sty
 ```
 .demo-hero-h1-heading {
   @include h1-hero; 
-	// desktop font-size: 40px; mobile font-size: 55px
-	// desktop line-height: 1.25; mobile line-height: 1.15 
+  // desktop font-size: 40px; mobile font-size: 55px
+  // desktop line-height: 1.25; mobile line-height: 1.15 
 }
 ```
 
@@ -131,8 +131,8 @@ Use @include h2 for preset desktop and mobile font-size and line-height styling 
 ```
 .demo-h2-heading {
   @include h2; 
-	// desktop font-size: 30px; mobile font-size: 20px
-	// desktop line-height: 1.15; mobile line-height: 1.25 
+  // desktop font-size: 30px; mobile font-size: 20px
+  // desktop line-height: 1.15; mobile line-height: 1.25 
 }
 ```
 
@@ -143,8 +143,8 @@ Use @include h3 for preset desktop and mobile font-size and line-height styling 
 ```
 .demo-h3-heading {
   @include h3; 
-	// desktop font-size: 25px; mobile font-size: 18px
-	// desktop line-height: 1.25; mobile line-height: 1.15
+  // desktop font-size: 25px; mobile font-size: 18px
+  // desktop line-height: 1.25; mobile line-height: 1.15
 }
 ```
 
@@ -155,8 +155,8 @@ Use @include h4 for preset desktop and mobile font-size and line-height styling 
 ```
 .demo-h4-heading {
   @include h4; 
-	// desktop font-size: 20px; mobile font-size: 16px
-	// desktop line-height: 1.25; mobile line-height: 1.15
+  // desktop font-size: 20px; mobile font-size: 16px
+  // desktop line-height: 1.25; mobile line-height: 1.15
 }
 ```
 
@@ -167,8 +167,8 @@ Use @include h5 for preset desktop and mobile font-size and line-height styling 
 ```
 .demo-h5-heading {
   @include h5; 
-	// desktop font-size: 18px; mobile font-size: 16px;
-	// desktop line-height: 1.25; mobile line-height: 1.15
+  // desktop font-size: 18px; mobile font-size: 16px;
+  // desktop line-height: 1.25; mobile line-height: 1.15
 }
 ```
 
@@ -179,8 +179,8 @@ Use @include body-copy for preset desktop and mobile body copy styles:
 ```
 .demo-body-copy {
   @include body-copy; 
-	// desktop and mobile font-size: 16px
-	// desktop line-height: 1.25; mobile line-height: 1;
+  // desktop and mobile font-size: 16px
+  // desktop line-height: 1.25; mobile line-height: 1;
   // desktop and mobile font-weight: normal 
 }
 ```
@@ -192,8 +192,8 @@ Use @include body-copy-small for preset desktop and mobile body copy styles:
 ```
 .demo-small-body-copy {
   @include body-copy-small; 
-	// desktop and mobile font-size: 14px
-	// desktop line-height: 1.25; mobile line-height: 1
+  // desktop and mobile font-size: 14px
+  // desktop line-height: 1.25; mobile line-height: 1
   // desktop and mobile font-weight: normal 
 }
 ```
@@ -205,8 +205,8 @@ Use @include eyebrow-large for preset desktop and mobile large eyebrow styles:
 ```
 .demo-large-eyebrow {
   @include eyebrow-large; 
-	// desktop font-size: 25px; mobile font-size: 18px
-	// desktop line-height: 1.4; mobile line-height: 1.25
+  // desktop font-size: 25px; mobile font-size: 18px
+  // desktop line-height: 1.4; mobile line-height: 1.25
   // desktop and mobile text-transform: uppercase
   // desktop and mobile font-weight: bold
 }
@@ -219,8 +219,8 @@ Use @include eyebrow-small for preset desktop and mobile small eyebrow styles:
 ```
 .demo-small-eyebrow {
   @include eyebrow-small; 
-	// desktop font-size: 20px; mobile font-size: 16px
-	// desktop line-height: 1.4; mobile line-height: 1.25
+  // desktop font-size: 20px; mobile font-size: 16px
+  // desktop line-height: 1.4; mobile line-height: 1.25
   // desktop and mobile text-transform: uppercase
   // desktop and mobile font-weight: bold
   // desktop and mobile margin-bottom: 20px
@@ -241,7 +241,7 @@ Add styles within an @include media-mobile-only rule for viewport widths up to a
   @include media-mobile-only {
     margin-bottom: 25px;
   }
-	// @media screen and ( max-width: 767px ) {
+  // @media screen and ( max-width: 767px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -256,7 +256,7 @@ Add styles within an @include media-mobile-portrait rule for mobile portrait ori
   @include media-mobile-portrait {
     margin-bottom: 25px;
   }
-	// @media screen and ( max-width: 479px ) {
+  // @media screen and ( max-width: 479px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -271,7 +271,7 @@ Add styles within an @include media-mobile-landscape rule for mobile landscape o
   @include media-mobile-landscape {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 479px ) and ( max-width: 767px ) {
+  // @media screen and ( min-width: 479px ) and ( max-width: 767px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -286,7 +286,7 @@ Add styles within an @include media-mobile-landscape-and-up rule for mobile land
   @include media-mobile-landscape-and-up {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 480px ) {
+  // @media screen and ( min-width: 480px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -301,7 +301,7 @@ Add styles within an @include media-mobile-and-tablet rule for viewport widths u
   @include media-mobile-and-tablet {
     margin-bottom: 25px;
   }
-	// @media screen and ( max-width: 991px ) {
+  // @media screen and ( max-width: 991px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -316,7 +316,7 @@ Add styles within an @include media-tablet-and-up rule for viewport widths great
   @include media-tablet-and-up {
     margin-bottom: 25px;
   }
-	// @media screen and ( max-width: 768px ) {
+  // @media screen and ( max-width: 768px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -331,7 +331,7 @@ Add styles within an @include media-tablet-only rule for tablet viewport widths 
   @include media-tablet-only {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
+  // @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -346,7 +346,7 @@ Add styles within an @include media-mobile-ipad rule for mobile ipad viewport wi
   @include media-ipad-mobile {
     margin-bottom: 25px;
   }
-	// @media screen and ( max-width: 550px ) {
+  // @media screen and ( max-width: 550px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -360,7 +360,7 @@ Add styles within an @include media-mobile-ipad rule for desktop ipad viewport w
   @include media-ipad-desktop {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 551px ) {
+  // @media screen and ( min-width: 551px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -375,7 +375,7 @@ Add styles within an @include media-desktop-and-up rule for viewport widths grea
   @include media-desktop-and-up {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 992px ) {
+  // @media screen and ( min-width: 992px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -390,7 +390,7 @@ Add styles within an @include media-desktop-only rule for desktop viewport width
   @include media-desktop-only {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+  // @media screen and ( min-width: 992px ) and ( max-width: 1199px ) {
 			margin-bottom: 25px;
 	}
 }
@@ -405,7 +405,7 @@ Add styles within an @include media-desktop-large rule for viewport widths great
   @include media-desktop-large {
     margin-bottom: 25px;
   }
-	// @media screen and ( min-width: 1200px ) {
+  // @media screen and ( min-width: 1200px ) {
 			margin-bottom: 25px;
 	}
 }
