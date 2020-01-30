@@ -242,7 +242,7 @@ Add styles within an @include media-mobile-only rule for viewport widths up to a
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 767px ) {
-	    margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 }
 ```
