@@ -26,7 +26,7 @@ Use @include size() with height and weight parameters to generate height and wid
 
 ```
 .demo-div {
-	@include size(200px, 500px)
+  @include size(200px, 500px)
   // height: 200px;
   // weight: 500px;
 }
@@ -38,7 +38,7 @@ Use @include square() with a square size paramater to generate square height and
 
 ```
 .demo-div {
-	@include square(500px)
+  @include square(500px)
   // height: 500px;
   // weight: 500px;
 }
