@@ -10,7 +10,8 @@ Included in the mixins directory is the following collection of Sass mixins for 
 
 ## Installation  
 
-To install aem-fed-mixins run `npm install aem-fed-mixins --save` at the same directory level of your package.json file. Then in your preferred scss file, import a path to the node module's master mixins file:<br/>
+* To install aem-fed-mixins run `npm install aem-fed-mixins --save` at the same directory level of your package.json file. 
+* Then in your preferred scss file, import a path to the node module's master mixins file:<br/>
 `@import "./node_modules/aem-fed-mixins/mixins/_mixins.scss";`
 
 ## @mixin and @include Rules
