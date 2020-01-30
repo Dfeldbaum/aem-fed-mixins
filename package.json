@@ -1,6 +1,6 @@
 {
   "name": "aem-fed-mixins",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Sass mixins collection for front end AEM developers",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,11 @@
   },
   "keywords": [
     "npm",
-    "node"
+    "node",
+    "scss",
+    "mixins",
+    "scss mixins",
+    "sass mixins"
   ],
   "author": "David Feldbaum",
   "license": "MIT",
