@@ -8,7 +8,13 @@ Included in the mixins directory is the following collection of Sass mixins for 
 * Media queries mixins
 * Typography mixins
 
-## General Instructions
+## Installation  
+
+* To install aem-fed-mixins run `npm install aem-fed-mixins --save` at the same directory level of your package.json file. 
+* Then in your preferred scss file, import a path to the node module's master mixins file: 
+`@import "./node_modules/aem-fed-mixins/mixins/_mixins.scss";`
+
+## @mixin and @include Rules
 
 * Mixins are defined using the @mixin at-rule, which is written @mixin <name> { ... } or @mixin name(<arguments...>) { ... }. 
 * A mixin’s name can be any Sass identifier, and it can contain any statement other than top-level statements. 
@@ -18,7 +24,7 @@ Included in the mixins directory is the following collection of Sass mixins for 
 For more general information visit [Sass Mixin Documentation](https://sass-lang.com/documentation/at-rules/mixin)
 
 
-## General Mixins
+## General Mixins Instructions
 
 ### Sizing
 
@@ -86,7 +92,7 @@ Use @include image-mask-gradient to generate semi-transparent gradient styles fo
 ```
 
 
-## Typography Mixins
+## Typography Mixins Instructions
 
 ### Pixels to REM Conversion
 
@@ -228,7 +234,7 @@ Use @include eyebrow-small for preset desktop and mobile small eyebrow styles:
 ```
 
 
-## Media Query Mixins
+## Media Query Mixins Instructions
 
 Note: All media query mixins incorporate various viewport breakpoint variables so that front end developers build responsively with ease. Each variable can be found within the variables directory within the node module.
 
@@ -242,7 +248,7 @@ Add styles within an @include media-mobile-only rule for viewport widths up to a
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 767px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -257,7 +263,7 @@ Add styles within an @include media-mobile-portrait rule for mobile portrait ori
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 479px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -272,7 +278,7 @@ Add styles within an @include media-mobile-landscape rule for mobile landscape o
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 479px ) and ( max-width: 767px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -287,7 +293,7 @@ Add styles within an @include media-mobile-landscape-and-up rule for mobile land
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 480px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -302,7 +308,7 @@ Add styles within an @include media-mobile-and-tablet rule for viewport widths u
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 991px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -317,7 +323,7 @@ Add styles within an @include media-tablet-and-up rule for viewport widths great
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 768px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -332,7 +338,7 @@ Add styles within an @include media-tablet-only rule for tablet viewport widths 
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -347,7 +353,7 @@ Add styles within an @include media-mobile-ipad rule for mobile ipad viewport wi
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 550px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -361,7 +367,7 @@ Add styles within an @include media-mobile-ipad rule for desktop ipad viewport w
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 551px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -376,7 +382,7 @@ Add styles within an @include media-desktop-and-up rule for viewport widths grea
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 992px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -391,7 +397,7 @@ Add styles within an @include media-desktop-only rule for desktop viewport width
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 992px ) and ( max-width: 1199px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
@@ -406,7 +412,7 @@ Add styles within an @include media-desktop-large rule for viewport widths great
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 1200px ) {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
   }
 }
 ```
