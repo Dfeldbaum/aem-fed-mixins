@@ -242,7 +242,7 @@ Add styles within an @include media-mobile-only rule for viewport widths up to a
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 767px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -257,7 +257,7 @@ Add styles within an @include media-mobile-portrait rule for mobile portrait ori
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 479px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -272,7 +272,7 @@ Add styles within an @include media-mobile-landscape rule for mobile landscape o
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 479px ) and ( max-width: 767px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -287,7 +287,7 @@ Add styles within an @include media-mobile-landscape-and-up rule for mobile land
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 480px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -302,7 +302,7 @@ Add styles within an @include media-mobile-and-tablet rule for viewport widths u
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 991px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -317,7 +317,7 @@ Add styles within an @include media-tablet-and-up rule for viewport widths great
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 768px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -332,7 +332,7 @@ Add styles within an @include media-tablet-only rule for tablet viewport widths 
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -347,7 +347,7 @@ Add styles within an @include media-mobile-ipad rule for mobile ipad viewport wi
     margin-bottom: 25px;
   }
   // @media screen and ( max-width: 550px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -361,7 +361,7 @@ Add styles within an @include media-mobile-ipad rule for desktop ipad viewport w
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 551px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -376,7 +376,7 @@ Add styles within an @include media-desktop-and-up rule for viewport widths grea
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 992px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -391,7 +391,7 @@ Add styles within an @include media-desktop-only rule for desktop viewport width
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 992px ) and ( max-width: 1199px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
@@ -406,7 +406,7 @@ Add styles within an @include media-desktop-large rule for viewport widths great
     margin-bottom: 25px;
   }
   // @media screen and ( min-width: 1200px ) {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
   }
 }
 ```
