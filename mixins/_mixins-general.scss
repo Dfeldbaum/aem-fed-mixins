@@ -39,7 +39,21 @@ $base-size: $base__font-size;
   width: 100%;
 }
 
-// Appearance
+// Auto Margin Centering
+//--------------
+@mixin auto-margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Transparent Background Color
+//--------------
+@mixin background-color-transparent($color, $opacity) {
+	background-color: $color;
+	opacity: $opacity;
+}
+
+// Image Mask Gradient
 //--------------
 @mixin image-mask-gradient() {
   @include absolute-fill;

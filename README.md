@@ -28,7 +28,7 @@ For more general information visit [Sass Mixin Documentation](https://sass-lang.
 
 ### Sizing
 
-Use @include size() with height and weight parameters to generate height and width styles:
+Use @include size() with height and weight arguments to generate height and width styles:
 
 ```
 .demo-div {
@@ -52,7 +52,7 @@ Use @include square() with a square size paramater to generate square height and
 
 ### Spacing
 
-Use @include spacing() with a spacing parameter for top and bottom padding styles:
+Use @include spacing() with a spacing argument for top and bottom padding styles:
 
 ```
 .demo-div {
@@ -73,6 +73,30 @@ Use @include absolute-fill to fill entire height and width of a target element:
   // top: 0;
   // height: 100%;
   // width: 100%;
+}
+```
+
+### Margin Auto Center
+
+Use @include auto-margin-center to center a block element with left and right auto margin: 
+
+```
+.demo-element {
+  @include auto-margin-center
+  // margin-left: auto;
+  // margin-right: auto;
+}
+```
+
+### Background Color Transparency
+
+Use @include background-color-transparent with color and opacity arguments to add a background color with custom opacity:
+
+```
+.demo-element {
+  @include background-color-transparent(#000000, 0.2)
+  // background-color: $color;
+  // opacity: $opacity;
 }
 ```
 
