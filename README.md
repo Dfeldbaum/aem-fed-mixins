@@ -40,7 +40,7 @@ Use @include size() with height and weight arguments to generate height and widt
 
 ### Square Sizing
 
-Use @include square() with a square size paramater to generate square height and width styles:
+Use @include square() with a square size argument to generate square height and width styles:
 
 ```
 .demo-div {
@@ -116,6 +116,73 @@ Use @include image-mask-gradient to generate semi-transparent gradient styles fo
 ```
 
 
+## Flexbox Mixins Instructions
+
+### Flexbox Container
+
+Use @include flexbox to generate cross-browser styles for a flexbox container element:
+
+```
+.demo-div {
+  @include flexbox; 
+  // display: flex;
+  // display: -webkit-box;
+  // display: -moz-box;
+  // display: -webkit-flex;
+  // display: -ms-flexbox;
+}
+```
+
+### Flexbox Direction
+
+Use @include flex-direction to generate cross-browser flex-direction styles for a flexbox container's child element(s). Arguments include row(default) | row-reverse | column | column-reverse: 
+
+```
+.demo-div {
+  @include flex-direction(column); 
+  // flex-direction: column;
+  // -webkit-flex-direction: column;
+  // -moz-flex-direction: column;
+  // -ms-flex-direction: column;
+  // -webkit-box-direction: normal;
+  // -webkit-box-orient: vertical;
+  // -moz-box-direction: normal;
+  // -moz-box-orient: vertical;
+}
+```
+
+### Justify Content
+
+Use @include justify-content to generate cross-browser justify-content styles for alignment of a flexbox container's child element(s) along its main axis. Arguments include flex-start (default) | center | flex-end | space-between | space-around: 
+
+```
+.demo-div {
+  @include justify-content(center); 
+  // justify-content: center;
+  // -webkit-justify-content: center;
+  // -moz-justify-content: center;
+  // -ms-justify-content: center;
+}
+```
+
+### Align Items
+
+Use @include align-items to generate cross-browser align-content styles for alignment of a flexbox container's child element(s) along its cross axis. Arguments include flex-start (default) | center | flex-end | baseline | stretch: 
+
+```
+.demo-div {
+  @include align-items(flex-end); 
+  // align-items: flex-end;
+  // -webkit-align-items: $value;
+  // -webkit-box-align: end;
+  // -moz-align-items: $value;
+  // -moz-box-align: end;
+  // -ms-align-items: $value;
+  // -ms-flex-align: end;
+}
+```
+
+
 ## Typography Mixins Instructions
 
 ### Pixels to REM Conversion
@@ -124,7 +191,7 @@ Convert to rem units for any css property by inserting a pixel value as a number
 
 ```
 .demo-text {
-  font-size: rem(20); // 2rem
+  font-size: rem(20); // 2rem;
 }
 ```
 
@@ -135,10 +202,9 @@ Use @include h1 for preset desktop and mobile font-size, font-weight and line-he
 ```
 .demo-h1-heading {
   @include h1; 
-  // desktop font-size: 35px; mobile font-size: 25px
-  // desktop line-height: 1.15; mobile line-height: 1.25 
-  // desktop & mobile font-weight: normal
-
+  // desktop font-size: 35px; mobile font-size: 25px;
+  // desktop line-height: 1.15; mobile line-height: 1.25; 
+  // desktop & mobile font-weight: normal;
 }
 ```
 
