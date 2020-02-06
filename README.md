@@ -1,7 +1,5 @@
 # AEM FED Mixins
 
-## Sass Mixins 
-
 Included in the mixins directory is the following collection of Sass mixins for use: 
 
 * General Mixins
@@ -96,8 +94,8 @@ Use @include background-color-transparent with color and opacity arguments to ad
 ```
 .demo-element {
   @include background-color-transparent(#000000, 0.2)
-  // background-color: $color;
-  // opacity: $opacity;
+  // background-color: #000000;
+  // opacity: 0.2;
 }
 ```
 

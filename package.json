@@ -1,6 +1,6 @@
 {
   "name": "aem-fed-mixins",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Sass mixins collection for front end AEM developers",
   "main": "index.js",
   "scripts": {
