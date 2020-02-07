@@ -5,7 +5,7 @@ Included in the mixins directory is the following collection of Sass mixins for 
 * General Mixins
 * Flexbox Mixins
 * Media Query Mixins
-* Typography mixins
+* Typography Mixins
 
 ## Installation  
 
